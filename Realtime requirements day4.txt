@@ -1,0 +1,122 @@
+package main
+
+import "fmt"
+
+func registration() {
+	var phonenum string = "9900367097"
+	var emailid string = "bond@gmail.com"
+	var nofpeoole int8 = 2
+	var name string = "venkatesh db"
+	var age int8 = 29
+	var proof string = "2342111111"
+	fmt.Println(phonenum, emailid, nofpeoole, age, name, proof)
+}
+
+func accomdodation() {
+
+	var tirupathirooms map[string][]string = make(map[string][]string)
+
+	tirupathirooms["1-june-2024"] = []string{"availabale 1", " Rs 304 ", "thollagaradeen ac room"}
+	tirupathirooms["2-june-2024"] = []string{"availabale 4", " Rs 304 ", "thollagaradeen ac room"}
+
+	fmt.Println(tirupathirooms)
+}
+
+
+func trustdonation() {
+
+	var dubaibalaji map[string]int = make(map[string]int)
+	dubaibalaji["14-6-2023"] = 124
+	dubaibalaji["15-6-2023"] = 224
+
+	fmt.Println(dubaibalaji)
+
+}
+
+func hundi() {
+
+	var hundiof [5]string = [5]string{"100000.00", "Parents", "sanju", "achievement"}
+
+	var hundi map[string]interface{} = make(map[string]interface{})
+
+	hundi["e-Hundi Offering"] = 100000.00
+
+	hundi["On behalf of: "] = "parents"
+
+	fmt.Println(hundiof, hundi)
+
+}
+
+type spritual struct {
+	category string
+	quantity int8
+	subtotal int
+}
+
+func products() {
+
+	var prod map[string]spritual = make(map[string]spritual)
+
+	prod["doop chornam"] = spritual{"50 gms", 1, 50}
+
+	fmt.Println(prod)
+
+}
+
+type cusomerdetails struct {
+	piligimname  string
+	age          int
+	gender       int8
+	photoidproof string
+	idproofno    string
+}
+
+
+func bookinginformation() {
+
+	var family [2]cusomerdetails
+
+	family[0].piligimname = "venkatesh"
+	family[0].age = 29
+	family[1].piligimname = "jayaram"
+
+	fmt.Println(family)
+
+	var booking []cusomerdetails = make([]cusomerdetails, 2)
+
+	booking[0].piligimname = "venkatesh"
+
+	var phonenum *string = new(string)
+
+	*phonenum = "9900367097"
+
+	fmt.Println(phonenum)
+
+	var prasadam []string = make([]string, 3)
+
+	prasadam[0] = "gliebi"
+
+	prasadam[1] = "vada"
+
+	prasadam[2] = "big laddu"
+
+	fmt.Println(prasadam)
+
+}
+
+func main() {
+
+	fmt.Println("real case study")
+
+	bookinginformation()
+
+	products()
+
+	hundi()
+
+	trustdonation()
+
+	accomdodation()
+
+	registration()
+}

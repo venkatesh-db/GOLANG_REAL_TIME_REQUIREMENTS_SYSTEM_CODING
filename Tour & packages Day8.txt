@@ -1,0 +1,61 @@
+https://www.thomascook.in/holidays/india-tour-packages/goa-tour-packages/simply-north-goa?pkgId=PKG010948&packageClassId=0&destination=PKG010948_goa_STATE_0&destTag=Goa&holidayBudget=1,30000
+
+
+
+
+package main
+
+import "fmt"
+
+type FillinDetails struct {
+	TourType       string
+	TRavellers     map[string]int
+	DateofTravel   string
+	ContactDetails []string
+}
+
+type packages struct {
+	trip      string
+	stay      string
+	places    string
+	GroupTour map[string]interface{}
+	budget    int
+}
+
+var countries []packages = make([]packages, 1)
+
+func allpackages() {
+
+	countries[0].trip = "goa"
+	countries[0].stay = "dum dum resort"
+	countries[0].places = "goa beach stand"
+	countries[0].GroupTour = make(map[string]interface{})
+	countries[0].GroupTour["flights"] = "spice jet"
+	countries[0].GroupTour["hotels"] = "taj hotel 5 star"
+	countries[0].budget = 7000
+
+}
+
+func IwanttoHolidayin(destination string, budget int, mot string) {
+
+	for _, v := range countries {
+
+		//fmt.Println(v.budget, v.trip)
+
+		if v.budget < budget && v.trip == destination {
+
+			fmt.Println("we have atrip ")
+
+		}
+
+	}
+
+}
+
+func main() {
+
+	fmt.Println("tour & packages")
+	allpackages()
+	IwanttoHolidayin("goa", 10000, "july")
+	IwanttoHolidayin("asutralia", 100000, "dec")
+}

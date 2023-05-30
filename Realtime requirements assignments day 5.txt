@@ -1,0 +1,47 @@
+
+
+
+
+ 1. bookmyshow 
+
+
+      Date 
+
+       |
+
+      1:15 pm   4:15 pm
+
+
+          make ( map [string] map[string][]string  
+
+
+2. red bus 
+
+      type  busdetails struct {
+
+      }
+
+
+             make ( map [string] []busdetails  )
+
+
+3. irctc 
+
+
+  type   trainsdetails struct {
+
+      }
+
+
+             make ( map [string] []trainsdetails   )
+      
+  
+
+4. googlepay 
+
+
+
+5. phonepay
+
+
+6.  paytm           
